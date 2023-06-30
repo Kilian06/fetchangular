@@ -1,0 +1,18 @@
+<div class="pokemonCard" (click)="goToCard(pokemon)">
+            <p class="pokemonName">{{pokemon.name.fr}}</p>
+        <img class="pokemonPicture" [src]="pokemon.sprites.regular">
+        <div class="pokemonTypes" *ngIf="pokemon.types.length > 1">
+            <div class="pokemonTypesUnite" *ngFor="let type of pokemon.types">
+                <p>{{type.name}} :</p>
+                <img [src]="type.image">
+
+            </div>
+        </div>
+        <div class="pokemonTypes" *ngIf="pokemon.types.length <= 1">
+            <div>
+                <p>{{pokemon.types[0].name}} : </p>
+                <img [src]="pokemon.types[0].image">
+
+            </div>
+        </div>
+</div>

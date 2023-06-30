@@ -1,0 +1,28 @@
+<div class="penduDiv" id="canvas">
+    <img class="logoPokemon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1024px-International_Pok%C3%A9mon_logo.svg.png">
+<p class="titre">Qui suis-je?</p>
+<p class="scoreTotal">Score Total : {{scoreTotal}}</p>
+
+<img [src]="randomPick.sprites.regular">
+
+<div class="pendu">
+    <ng-container *ngFor="let letter of randomPickArray; let i = index">
+        <p class="borderLetter" *ngIf="inputArray.includes(letter)">{{letter}}</p>
+        <p class="borderLetter" *ngIf="!inputArray.includes(letter)"></p>
+    </ng-container>
+</div>
+
+<p class="titre">Score : {{score}}</p>
+
+
+<input type="text" [(ngModel)]="inputValue" (keyup)="pickLetter()">
+<button (click)="newOne()">New One</button>
+
+
+
+<!-- <input type="text" [(ngModel)]="inputPokemonName">
+
+<button (click)="checkValue()">Effectuer une opération</button> -->
+<canvas class="test" #canvas></canvas>
+
+</div>

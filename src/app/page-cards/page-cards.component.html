@@ -1,0 +1,5 @@
+<p>{{pokemonName}}</p>
+<div *ngFor="let pokemonCard of pokemonData">
+
+    <img *ngIf="pokemonCard.image" [src]="pokemonCard.image + '/low.webp'">
+</div>

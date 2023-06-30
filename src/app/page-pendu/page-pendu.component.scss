@@ -1,0 +1,53 @@
+.penduDiv{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+.logoPokemon{
+    padding-top: 20px;
+    width: 90%;
+    max-width: 800px;
+}
+
+.titre{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+.scoreTotal{
+    padding-top: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+.pendu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 5px;
+    height: 40px;
+    padding-bottom: 50px;
+}
+.borderLetter{
+    border-bottom: 2px solid black;
+    height: 40px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    font-size: 50px;
+}
+
+
+
+.test{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.336);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1000;
+}

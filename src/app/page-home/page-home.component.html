@@ -1,0 +1,11 @@
+
+<div class="pokemonList">
+    <div *ngFor="let pokemon of data">
+        <div classe="pokemonCard" *ngIf="pokemon.pokedexId > 0">
+            <app-card-pokemon [pokemon]="pokemon"></app-card-pokemon>
+    
+    
+        </div>
+        
+    </div>
+</div>

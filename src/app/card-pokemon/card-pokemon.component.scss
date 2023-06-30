@@ -1,0 +1,33 @@
+.pokemonCard{
+    border: 2px solid grey;
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.pokemonName{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
+.pokemonPicture{
+    width: 150px;
+}
+
+.pokemonTypes{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+        div{
+            display: flex;
+            gap:10px;
+            p{
+                padding-top: 8px;
+            }
+        }
+        img{
+            width: 30px;
+            border-radius: 100%;
+        }
+
+}

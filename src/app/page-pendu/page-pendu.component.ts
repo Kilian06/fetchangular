@@ -71,10 +71,12 @@ export class PagePenduComponent implements OnInit {
 }
 
   pickLetter(){
-    if(!this.inputArray.includes(this.inputValue)){
-      if (this.randomPickArray.includes(this.inputValue)) {
-        this.inputArray.push(this.inputValue);
-        console.log(this.inputArray)
+    const letterPattern = /^[a-zA-Z]$/;
+    if (letterPattern.test(this.inputValue)) {
+
+    if(!this.inputArray.includes(this.inputValue.toLowerCase())){
+      if (this.randomPickArray.includes(this.inputValue.toLowerCase())) {
+        this.inputArray.push(this.inputValue.toLowerCase());
         this.inputValue = '';
 
         if(this.randomPickArrayUnique.length == this.inputArray.length){
@@ -95,6 +97,7 @@ export class PagePenduComponent implements OnInit {
       this.inputValue = ''
     }
   }
+}
 }
 
 

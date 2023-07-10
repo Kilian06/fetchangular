@@ -71,7 +71,7 @@ export class PagePenduComponent implements OnInit {
 }
 
   pickLetter(){
-    const letterPattern = /^[a-zA-Z]$/;
+    const letterPattern = /^[a-zA-Zéèêàâ]$/;
     if (letterPattern.test(this.inputValue)) {
 
     if(!this.inputArray.includes(this.inputValue.toLowerCase())){
